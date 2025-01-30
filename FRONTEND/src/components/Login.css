@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vehicle-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.vehicle-login-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  width: 350px;
+  text-align: center;
+}
+
+.vehicle-login-header {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.vehicle-login-label {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666666;
+  text-align: left;
+}
+
+.vehicle-login-input {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.vehicle-login-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.vehicle-login-remember {
+  font-size: 14px;
+  color: #666666;
+}
+
+.vehicle-login-forgot {
+  text-decoration: none;
+  color: #4285F4;
+}
+
+.vehicle-login-forgot:hover {
+  text-decoration: underline;
+}
+
+.vehicle-login-button {
+  background-color: #567bdb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.vehicle-login-button:hover {
+  background-color: #3d5ba5;
+}
+
+.vehicle-google-signin {
+  margin-top: 15px;
+  background-color: white;
+  color: #4285F4;
+  border: 1px solid #4285F4;
+  border-radius: 5px;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 55px;
+}
+
+.vehicle-google-signin:hover {
+  background-color: #f7faff;
+}
+
+.vehicle-google-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+}
+.vehicle-login-footer{
+  margin-top: 20px;
+}

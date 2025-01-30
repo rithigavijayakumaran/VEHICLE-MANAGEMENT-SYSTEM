@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.vehiclepage-container {
+  display: flex;
+  height: 100vh;
+  width: 210.5vh;
+}
+
+/* Sidebar styling */
+.vehiclepage-sidebar {
+  background-color: #005c99;
+  color: white;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.vehiclepage-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.vehiclepage-menu {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.vehiclepage-menu-item {
+  padding: 15px 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.vehiclepage-menu-item:hover,
+.vehiclepage-menu-item.active {
+  background-color: #003f6b;
+  transform: scale(1.05);
+}
+
+.vehiclepage-logout {
+  background-color: #d32f2f;
+  margin-top: auto;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.vehiclepage-logout:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* Main content styling */
+.vehiclepage-main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+/* Add Vehicle Button */
+.vehiclepage-add-vehicle {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #005c99;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.vehiclepage-add-vehicle:hover {
+  background-color: #003f6b;
+}
+
+/* Form Section Styling */
+.vehiclepage-add-form {
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin-top: 30px;
+}
+
+/* Form Group Styling */
+.vehiclepage-add-form .form-group {
+  margin-bottom: 15px;
+}
+
+/* Label Styling */
+.vehiclepage-add-form label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input Field Styling */
+.vehiclepage-add-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Submit Button Styling */
+.vehiclepage-submit-btn {
+  padding: 10px 20px;
+  background-color: #005c99;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.vehiclepage-submit-btn:hover {
+  background-color: #003f6b;
+}
+
+/* Table Styling */
+.vehiclepage-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.vehiclepage-table th,
+.vehiclepage-table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.vehiclepage-table th {
+  background-color: #f1f1f1;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .vehiclepage-sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .vehiclepage-main-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .vehiclepage-add-form {
+    width: 100%;
+  }
+
+  .vehiclepage-menu {
+    display: none;
+  }
+}

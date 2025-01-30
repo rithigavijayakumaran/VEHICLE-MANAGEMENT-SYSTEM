@@ -1,0 +1,201 @@
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; 
+    /* Soft background for a cleaner look */
+  }
+  
+  .admin-bookings-container {
+    display: flex;
+    height: 100vh;
+    width: 210.5vh; /* Ensures the layout occupies the full viewport height */
+  }
+  
+  /* Sidebar styling */
+  .admin-bookings-sidebar {
+    background-color: #005c99;
+    color: white;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  .admin-bookings-menu {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .admin-bookings-menu-item {
+    padding: 15px 10px;
+    margin: 10px 0;
+    
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .admin-bookings-menu-item:hover,
+  .admin-bookings-menu-item.active {
+    background-color: #003f6b;
+    transform: scale(1.05); /* Slight hover effect */
+  }
+  
+  .admin-bookings-logout {
+    margin-top: auto;
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: left;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .admin-bookings-logout:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+  }
+  
+  /* Main content styling */
+  .admin-bookings-main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+  }
+  
+  /* Header */
+  .admin-bookings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .admin-bookings-search-bar {
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .admin-bookings-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  .admin-bookings-table{
+    margin-top :30px;
+  }
+  
+  /* Table styling */
+  .admin-bookings-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+  
+  .admin-bookings-table th,
+  .admin-bookings-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .admin-bookings-table th {
+    background-color: #f1f1f1;
+  }
+  
+  .admin-bookings-status {
+    text-align: center;
+  }
+  
+  .admin-bookings-status.pending {
+    color: orange;
+  }
+  
+  .admin-bookings-status.rejected {
+    color: red;
+  }
+  
+  .admin-bookings-status.approved {
+    color: green;
+  }
+  
+  .admin-bookings-allot {
+    color: #0056b3;
+    cursor: pointer;
+  }
+  
+  .admin-bookings-allot:hover {
+    text-decoration: underline;
+  }
+  
+  .admin-bookings-view {
+    color: #28a745;
+    cursor: pointer;
+  }
+  
+  .admin-bookings-view:hover {
+    text-decoration: underline;
+  }
+  
+ 
+  
+ 
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .admin-bookings-sidebar {
+      width: 20%; /* Adjusts for smaller screens */
+    }
+  
+  
+    .admin-bookings-table th,
+    .admin-bookings-table td {
+      padding: 10px; /* Reduces padding for smaller screens */
+
+    }
+    /* Dropdown styling for visibility and alignment */
+.admin-bookings-driver-dropdown {
+  color: #000; /* Text color for visibility */
+  background-color: #fff; /* Background color for dropdown */
+  font-size: 14px; /* Readable font size */
+  padding: 8px; /* Adjust padding for better spacing */
+  border: 1px solid #ccc; /* Subtle border for contrast */
+  border-radius: 4px; /* Rounded edges for consistency */
+  appearance: none; /* Removes default styling for uniformity */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  width: 100%; /* Ensures dropdown expands to fit container */
+}
+
+/* Options inside dropdown */
+.admin-bookings-driver-dropdown option {
+  color: #000; /* Visible option text */
+  background-color: #fff; /* Background color for dropdown options */
+  padding: 5px; /* Adjust spacing */
+}
+
+/* Dropdown focus state */
+.admin-bookings-driver-dropdown:focus {
+  outline: none; /* Removes default outline */
+  border: 2px solid #0056b3; /* Adds focus border color */
+  background-color: #f9f9f9; /* Subtle focus background */
+}
+
+  }
+  
