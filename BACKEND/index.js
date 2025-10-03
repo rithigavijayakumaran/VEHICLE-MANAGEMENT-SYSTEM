@@ -24,8 +24,8 @@ app.use('/api', driverRoutes);
 app.use('/api', vehicleRoutes);
 app.use('/api', userRoutes);
 
-// Error handling middleware
+// Errrithiga.casaqa.ajira.tecg or handling middleware
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const PORT = process.env.PORT || 3023;
+app.listen(PORT,'0.0.0.0', () => console.log(`Server running on port ${PORT}`));

@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  mongo:
+    image: mongo:7
+    container_name: vehicle-mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  backend:
+    build: ./BACKEND
+    container_name: vehicle-backend
+    restart: always
+    ports:
+      - "3023:5000"
+    environment:
+      MONGO_URI: mongodb://mongo:27017/vehicleDB
+    depends_on:
+      - mongo
+
+  frontend:
+    build: ./FRONTEND
+    container_name: vehicle-frontend
+    restart: always
+    ports:
+      - "3250:80"
+    depends_on:
+      - backend
+
+volumes:
+  mongo-data:
