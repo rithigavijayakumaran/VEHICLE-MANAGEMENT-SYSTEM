@@ -16,7 +16,7 @@ const Adminavailablestaff = () => {
     useEffect(() => {
         const fetchDrivers = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/driver');
+                const response = await axios.get('http://localhost:3023/api/driver');
                 setStaffData(response.data); // Update the state with the fetched data
                 setLoading(false); // Stop the loading spinner
             } catch (error) {
