@@ -27,5 +27,5 @@ app.use('/api', userRoutes);
 // Errrithiga.casaqa.ajira.tecg or handling middleware
 app.use(errorHandler);
 
-const PORT = 3023;
+const PORT = 5000;
 app.listen(PORT,'0.0.0.0', () => console.log(`Server running on port ${PORT}`));

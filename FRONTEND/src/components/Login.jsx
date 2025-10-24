@@ -15,7 +15,7 @@ const Login = () => {
     if (isRegistering) {
       // Register user
       try {
-        const response = await axios.post("http://localhost:3023/api/register", {
+        const response = await axios.post("http://localhost:5000/api/register", {
           email,
           password,
           facultyid, // Include facultyid in registration
@@ -30,7 +30,7 @@ const Login = () => {
     } else {
       // Login user
       try {
-        const response = await axios.post("http://localhost:3023/api/login", {
+        const response = await axios.post("http://localhost:5000/api/login", {
           email,
           password,
         });

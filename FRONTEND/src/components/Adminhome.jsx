@@ -16,7 +16,7 @@ const AdminHome = () => {
   useEffect(() => {
     const fetchCounts = async () => {
       try {
-        const response = await axios.get("http://localhost:3023/api/book");
+        const response = await axios.get("http://localhost:5000/api/book");
         const bookings = response.data;
 
         // Calculate counts based on booking status

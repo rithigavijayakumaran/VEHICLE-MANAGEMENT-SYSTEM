@@ -25,7 +25,7 @@ const Home = () => {
     useEffect(() => {
         const fetchVehicle = async () => {
             try {
-                const response = await axios.get("http://localhost:3023/api/vehicles");
+                const response = await axios.get("http://localhost:5000/api/vehicles");
                 setVehicleData(response.data);
                 setLoading(false);
             } catch (error) {
@@ -41,7 +41,7 @@ const Home = () => {
         if (loggedInFacultyId) {
             const fetchBookings = async () => {
                 try {
-                    const response = await axios.get("http://localhost:3023/api/book", {
+                    const response = await axios.get("http://localhost:5000/api/book", {
                         params: { facultyid: loggedInFacultyId },  // Send facultyid to filter bookings for logged-in user
                     });
                     setBookings(response.data);

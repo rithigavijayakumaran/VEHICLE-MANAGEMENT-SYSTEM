@@ -15,7 +15,7 @@ services:
     container_name: vehicle-backend
     restart: always
     ports:
-      - "3023:5000"
+      - "5000:5000"
     environment:
       MONGO_URI: mongodb://mongo:27017/vehicleDB
     depends_on:
@@ -26,7 +26,7 @@ services:
     container_name: vehicle-frontend
     restart: always
     ports:
-      - "3250:80"
+      - "3000:80"
     depends_on:
       - backend
 

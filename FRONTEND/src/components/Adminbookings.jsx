@@ -16,10 +16,10 @@ const AdminBookings = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const bookingsResponse = await axios.get("http://localhost:3023/api/book");
+        const bookingsResponse = await axios.get("http://localhost:5000/api/book");
         setBookings(bookingsResponse.data);
 
-        const driversResponse = await axios.get("http://localhost:3023/api/driver");
+        const driversResponse = await axios.get("http://localhost:5000/api/driver");
         setDrivers(driversResponse.data);
       } catch (error) {
         console.error("Error fetching data:", error);

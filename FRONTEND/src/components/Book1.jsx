@@ -24,7 +24,7 @@ function Book1() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3023/api/book', formDetails);
+      const response = await axios.post('http://localhost:5000/api/book', formDetails);
       alert('Booking successful!');
       navigate('/response'); // Navigate to a confirmation page or home
     } catch (error) {

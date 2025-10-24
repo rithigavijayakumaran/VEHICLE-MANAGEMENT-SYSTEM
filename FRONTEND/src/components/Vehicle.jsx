@@ -20,7 +20,7 @@ const Vehicle = () => {
     useEffect(() => {
         const fetchVehicles = async () => {
             try {
-                const response = await axios.get('http://localhost:3023/api/vehicles');
+                const response = await axios.get('http://localhost:5000/api/vehicles');
                 setVehicleData(response.data); // Update the state with the fetched data
                 setLoading(false); // Stop the loading spinner
             } catch (error) {
@@ -46,9 +46,9 @@ const Vehicle = () => {
         e.preventDefault();
         try {
             // Post new vehicle data to the backend
-            await axios.post('http://localhost:3023/api/vehicles', newVehicle);
+            await axios.post('http://localhost:5000/api/vehicles', newVehicle);
             // Re-fetch the vehicle data after submission
-            const response = await axios.get('http://localhost:3023/api/vehicles');
+            const response = await axios.get('http://localhost:5000/api/vehicles');
             setVehicleData(response.data);
             // Hide the form
             setShowForm(false);
